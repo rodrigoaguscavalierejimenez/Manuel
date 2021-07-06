@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Starstruck</title>
+</head>
+
+<body class="bodystyle">
+    <header class="header">
+        <a href="../index.html"><img class="logo" src="../media/Img/fourtuity4.png" alt="Logo"></a>
+
+        <nav>
+            <ul>
+                <li><a class="white" href="../index.html"><b>Inicio</b></a></li>
+                <li><a class="white" href=".#"><b> Poderes</b></a></li>
+                <li><a class="white" href="#"><b> Archivos</b></a></li>
+                <li><a class="white" href="#"><b> Origen</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner5"></section>
+    <form>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" />
+        <br>
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="Apellido" />
+        <br>
+        <label for="E-mail">E-mail:</label>
+        <input type="text" name="E-mail" />
+        <br>
+        <label for="Pedido">Pedido:</label>
+        <select name="Pedido">
+            <option value="S">Saludos</option>
+            <option value="A">Asesinato</option>
+            <option value="O">Otros</option>
+        </select>
+        <br>
+        <label for="Checkboxa">Acepta términos y condiciones:</label>
+        <input type="checkbox" id="Checkboxa" name="acepta" value="1" />
+        <br>
+        <legend>Escriba su pedido</legend>
+        <textarea name="textarea" rows="10" cols="50">Comentarios</textarea>
+        <br>
+        <input type="submit" value="Enviar formulario" />
+        <input type="reset" value="Limpiar formulario" />
+        <input type="button" value="Sin acciones" />
+
+    </form>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

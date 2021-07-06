@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.body {
+  font: 1rem "Calibri";
+  min-height: 200vh;
+  background: url(/MPDP/segunda/media/Img/fondo.png);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.header a .logo {
+  display: flex;
+  width: 100%;
+  position: relative;
+  transition: 0.6;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li .white {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+header ul li .black {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+.container1 {
+  display: flex;
+  width: 100%;
+  height: 110vh;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 5% 0%;
+  background-color: black;
+  box-shadow: 0px 80px 70px rgba(0,0,0,0.50);
+}
+
+.box {
+  flex: 2;
+  overflow: hidden;
+  transition: all 600ms;
+  position: relative;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.box>img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms;
+  filter: grayscale();
+}
+
+.box:hover {
+  flex: 50%;
+  
+}
+
+.box:hover>.img1 {
+  width: 100%;
+  height: 100%;
+  filter: none;
+}
+
+.box:hover>.img2 {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: none;
+}
+
+.capa h3 {
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.capa img {
+  line-height: 1.5;
+  max-width: 500px;
+  margin: auto;
+}
+
+.container1 .box:hover>.capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.container1 .box:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container1 .box .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 213, 255, 0);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+header.sticky ul li a {
+  color: #fff;
+}
+
+header.sticky {
+  padding: 5px;
+  background: black;
+}
+
+@media (min-width: 0) {
+  html {
+    font-size: 0.8rem;
+  }
+  .card-body ul li {
+    font-size: 0.9rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .nav-item {
+    border-style: ridge ridge none ridge;
+  }
+  .nav-item--last {
+    border-bottom: ridge;
+  }
+  .fas.fa-chevron-down.fa-2x {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 0.9rem;
+    line-height: 90%;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .card-body ul li {
+    font-size: 0.9rem;
+  }
+  .nav-item {
+    border-style: ridge ridge none ridge;
+  }
+  .nav-item--last {
+    border-bottom: ridge;
+  }
+  .fas.fa-chevron-down.fa-2x {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+  .nav-item {
+    border: none;
+  }
+  .fas.fa-chevron-down.fa-2x {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.1rem;
+  }
+  .nav-item {
+    border: none;
+  }
+  .fas.fa-chevron-down.fa-2x {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .nav-item {
+    border: none;
+  }
+  .fas.fa-chevron-down.fa-2x {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 1.3rem;
+  }
+  .nav-item {
+    border: none;
+  }
+  .fas.fa-chevron-down.fa-2x {
+    visibility: visible;
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+.fas.fa-chevron-down.fa-2x {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  animation: down 1.5s infinite;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn.btn-dark {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+}
+
+.networks__socialButton {
+  height: 80px;
+  width: 80px;
+  padding-left: 30px;
+}
+
+.networks__socialButton:hover {
+  transform: translateY(-10px);
+}
+
+.fab.fa-spotify {
+  color: #cccca0;
+  padding-left: 0;
+}
+
+.fab.fa-spotify:hover {
+  filter: sepia(50%);
+}
+
+.fab.fa-soundcloud {
+  color: #cccca0;
+}
+
+.fab.fa-soundcloud:hover {
+  filter: sepia(50%);
+}
+
+.fab.fa-itunes {
+  color: #cccca0;
+}
+
+.fab.fa-itunes:hover {
+  filter: sepia(50%);
+}
+
+.raise:hover, .raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #040411;
+  transform: translateY(-0.25em);
+}
+
+.card {
+  border: none;
+  width: 18rem;
+  background-color: #ededf1;
+}
+
+.card-body {
+  color: #cccca0;
+  background-color: #040411;
+}
+
+@keyframes welcome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bannerImage {
+  animation: welcome 3s;
+  overflow: hidden;
+}
+
+.bio__image {
+  max-height: 300px;
+  max-width: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.albumImg {
+  max-width: 450px;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.list-group-item {
+  background-color: #ededf1;
+}
+
+div ol li {
+  font-size: 0.9 rem;
+  color: #e3ecec;
+  padding-top: 5px;
+}
+
+.modal-body {
+  background-color: #e4e4f4;
+}
+
+.modal-header {
+  background-color: #e4e4f4;
+}
+
+.navbar-expand-md .navbar-nav {
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.colorLarkinPNav {
+  background-color: #ededf1;
+}
+
+.larkinPoe {
+  height: 30px;
+  overflow: hidden;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.larkinPoe:hover {
+  filter: sepia(60%);
+}
+
+.bio {
+  background-color: #c4c3cc;
+  text-align: center;
+}
+
+.bio__text {
+  text-align: left;
+  padding: 20px;
+  color: #040411;
+  background-color: #c4c3cc;
+}
+
+.albumDetails {
+  overflow: hidden;
+  background-color: #040411;
+  max-width: 450px;
+  max-height: 450px;
+  color: #cccca0;
+  line-height: 90%;
+  margin: 0;
+}
+
+.titleMyApp {
+  color: #000000;
+  text-align: center;
+  font-family: Impact;
+  font-size: 4rem;
+  padding: 20px;
+}
+
+.titleMyApp--movie {
+  background-color: #c4c3cc;
+}
+
+.movie {
+  background-color: #c4c3cc;
+  padding-bottom: 10px;
+}
+
+.movie__musicVideo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.networks {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
