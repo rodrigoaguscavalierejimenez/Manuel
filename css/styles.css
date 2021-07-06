@@ -8,7 +8,7 @@
 .body {
   font: 1rem "Calibri";
   min-height: 200vh;
-  background: url(/MPDP/segunda/media/Img/fondo.png);
+  background: url(../media/Img/fondo.png);
 }
 
 .header {
